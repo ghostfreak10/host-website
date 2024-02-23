@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nike landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-info">
+            <i class='bx bxl-github icon'></i>
+            <h2>Krishna&nbsp;Sahay</h2>
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span class="title">Dashbord</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="title">User</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="title">Notifications</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-message"></i>
+                    <span class="title">Messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span class="title">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span class="title">Wallet</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="title">Likes</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span class="title">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img height="100px" src="logo.png" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Where All <br> Athletes Belong</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, omnis explicabo natus molestiae minus aut reiciendis fuga excepturi ut officiis earum magni quaerat exercitationem, consequuntur ducimus recusandae asperiores dolores illum obcaecati sit suscipit ipsam blanditiis nesciunt. Nihil, velit ratione. Corporis.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="imgbox">
+                <img src="shoe1.png" class="nikeshoes">
+            </div>
+        </div>
+        <ul class="thumb">
+            <div class="flex">
+
+                <li><img src="shoe1.png" onclick="imgslider('shoe1.png');changecirclecolor( 'rgb(72, 189, 173)') "></li>
+                <li><img  src="shoes2.png" onclick="imgslider('shoes2.png'); changecirclecolor('rgb(59, 59, 59)')"></li>
+                <li><img src="shoes3.png" onclick="imgslider('shoes3.png'); changecirclecolor('rgb(117, 9, 9)')"></li>
+                <li><img src="shoes4.png" onclick="imgslider('shoes4.png'); changecirclecolor('rgb(46, 114, 192)')"></li>
+                <li><img src="shoes5.png" onclick="imgslider('shoes5.png'); changecirclecolor('rgb(231, 144, 13)')"></li>
+            </div>
+            </ul>
+        <ul class="social">
+            <li><i class="fa-brands fa-twitter icon"></i></li>
+            <li><i class="fa-brands fa-instagram icon"></i></li>
+            <li><i class="fa-brands fa-facebook-f icon"></i></li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>   
+    <script src="side_bar.js"></script>
+     </script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;1,700&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo{
+    position: relative;
+    min-width: 80px;
+    
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #e6d8d8;
+    display: inline-block;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textbox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+}
+
+.content .textbox p{
+    color: #333;
+}
+
+.content .textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: black ;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.content .textbox a:hover{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: rgb(43, 42, 42) ;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.content .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(-25deg);
+}
+
+.content .imgbox img{
+    max-width: 500px;
+    margin-left: 80px;
+}
+
+.thumb li img{
+    height: 100px;
+}
+
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.thumb li:nth-child(2) img{
+    height: 120px;
+    margin:-15px 0;
+}
+.thumb li:nth-child(4) img{
+   margin: 7px 0;
+}
+
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.social{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li i{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(1.5);
+    padding: 15px;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(72, 189, 173);
+    clip-path: circle(600px at right );
+
+}
+.social {
+    color: #fff;
+}
+
+.social li i:hover{
+    color: #d8d1d1;
+}
+
+/* colors */
+/* rgb(72, 189, 173)
+rgb(59, 59, 59)
+rgb(117, 9, 9)
+rgb(46, 114, 192)
+rgb(231, 144, 13)
+
+*/
+
+@media screen and (max-width : 600px){
+    .content .imgbox{
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        transform: rotate(-25deg);
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .circle{
+        display: none;
+    
+    }
+
+    .thumb {
+        /* margin-top: 500px; */
+        /* transform: none; */
+        /* transform: translate(-50%, -50%); */
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .thumb li{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin:0 20px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .social{
+        /* display: none; */
+        color: #333;
+    }
+    header ul li a{
+        color: #333;
+    }
+    
+    header a .logo{
+        margin-bottom: 200px ;
+    }
+
+    .flex{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+    }
+
+
+}
